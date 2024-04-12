@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="game.js"></script>
+    <title>Color Game</title>
+  </head>
+  <style>
+    body {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    section {
+      margin: 20px auto;
+    }
+
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 12px;
+    }
+
+    .color-grid button {
+      all: unset;
+      cursor: pointer;
+      border: 2px solid black;
+      transition:
+        background-color 100ms ease,
+        transform 100ms ease;
+    }
+
+    .color-grid button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <body>
+    <section class="prompt">
+      <div class="buttons">
+        <button data-difficulty="easy">easy</button>
+        <button data-difficulty="normal">normal</button>
+        <button data-difficulty="hard">hard</button>
+      </div>
+      <div>
+        <h3>Guess: <span id="color-prompt">___</span></h3>
+      </div>
+    </section>
+    <section class="color-grid">
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+    </section>
+  </body>
+</html>

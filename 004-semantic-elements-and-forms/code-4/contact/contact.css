@@ -1,0 +1,28 @@
+form {
+  background-color: beige;
+  padding: 24px;
+  margin: 60px 0;
+}
+
+.form-item {
+  margin: 18px 0;
+}
+
+.form-item > label,
+.form-item > input,
+.form-item > textarea {
+  display: block;
+  width: 100%;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 4px;
+}
+
+input:focus {
+  border-bottom: 2px solid rgb(0, 134, 134);
+}

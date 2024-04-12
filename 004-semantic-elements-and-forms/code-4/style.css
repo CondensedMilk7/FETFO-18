@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: beige;
+  padding: 16px;
+  color: black;
+}
+
+header a {
+  color: inherit;
+}
+
+header a:hover {
+  color: rgb(58, 97, 99);
+}
+
+.title-container {
+  display: inline-block;
+  background-color: burlywood;
+  padding: 6px 24px;
+  border-radius: 6px;
+  margin-right: 32px;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav-ul {
+  all: unset;
+  list-style: none;
+}
+
+.nav-ul > li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+  text-align: justify;
+  min-height: 100vh;
+}
+
+footer {
+  padding: 16px;
+  background-color: beige;
+}
+
+.step {
+  color: blue;
+}

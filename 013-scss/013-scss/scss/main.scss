@@ -1,0 +1,32 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "base";
+
+h1 {
+  border: $border-default;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    color: blue;
+  }
+
+  .nav {
+    &__list {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      &__item {
+        a {
+          @include button(#000, white);
+        }
+      }
+    }
+  }
+}

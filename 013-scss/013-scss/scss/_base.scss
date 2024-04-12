@@ -1,0 +1,16 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  display: $border-default;
+}
+
+.btn {
+  @include button;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="script.js"></script>
+    <title>JavaScript DOM</title>
+  </head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(3, 200px);
+      grid-template-columns: repeat(3, 200px);
+      gap: 8px;
+    }
+    .grid > div {
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+    }
+  </style>
+  <body>
+    <h1>I am a heading</h1>
+    <p>This is paragraph 1</p>
+    <p id="my-paragraph">This is paragraph 2</p>
+    <button id="counter">Count: 0</button>
+    <div class="result-container"></div>
+    <button id="element-creator">Create element</button>
+    <div class="grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+@mixin button($bg-color: beige, $fg-color: #333) {
+  all: unset;
+  background-color: $bg-color;
+  color: $fg-color;
+  padding: 12px;
+  border: 2px solid burlywood;
+  cursor: pointer;
+}

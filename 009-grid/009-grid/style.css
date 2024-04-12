@@ -1,0 +1,73 @@
+main {
+  display: flex;
+  max-width: 700px;
+  margin: auto;
+}
+
+aside > nav {
+  position: sticky;
+  top: 0;
+}
+
+.tall {
+  height: 2000px;
+}
+
+.grid > div {
+  background-color: coral;
+  text-align: center;
+  border: 2px solid blueviolet;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 12px;
+}
+
+.website {
+  min-height: 700px;
+  background-color: beige;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-areas:
+    "hd hd hd hd hd hd"
+    "sd rt rt rt rt rt"
+    "sd rt rt rt rt rt"
+    "sd rt rt rt rt rt"
+    "sd rt rt rt rt rt"
+    "sd rt rt rt rt rt"
+    "sd rt rt rt rt rt"
+    "sd ft ft ft ft ft"; */
+}
+
+.website > header {
+  background-color: cadetblue;
+  /* grid-area: hd; */
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+}
+
+.website > aside {
+  background-color: cornflowerblue;
+  grid-column: 1 / 3;
+  grid-row: 2 / 7;
+  /* grid-area: sd; */
+}
+
+.website > article {
+  background-color: darkmagenta;
+  /* grid-area: rt; */
+  grid-column: 3 / 7;
+  grid-row: 2 / 6;
+}
+
+.website > footer {
+  background-color: aqua;
+  /* grid-area: ft; */
+  grid-column: 3 / 7;
+}
