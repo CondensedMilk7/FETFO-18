@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "ES6",
+    "removeComments": true,
+    "noImplicitAny": true
+  },
+  "files": [
+    "main.ts",
+    "extra.ts"
+  ]
+}
