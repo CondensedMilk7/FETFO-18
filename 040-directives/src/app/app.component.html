@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <app-header>
+    <a class="navbar-brand">Title</a>
+  </app-header>
+  <div class="container">
+    <h1 *ngIf="headingVisible" appHighlight highlightColor="blue">
+      Hello wrold!
+    </h1>
+    <h2 appHighlight highlightColor="green">Another title</h2>
+    <button (click)="headingVisible = !headingVisible" type="">
+      toggle heading
+    </button>
+    <ul>
+      <li [ngClass]="{ special: isSpecial, interesting: isInteresting }">
+        One
+      </li>
+      <li>Two</li>
+      <li>{{ title }}</li>
+    </ul>
+    <button (click)="isSpecial = !isSpecial">isSpecial</button>
+    <input type="text" id="example-ngModel" [(ngModel)]="title" />
+    <app-shopping-item
+      *ngFor="let item of shoppingList; trackBy: listTrackBy"
+      [item]="item"
+    />
+    <ul>
+      <ng-container *ngFor="let item of shoppingList; trackBy: listTrackBy">
+        <li>
+          <app-shopping-item [item]="item" />
+          <button (click)="onDeleteFromList(item.id)">delete</button>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

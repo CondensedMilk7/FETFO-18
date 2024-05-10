@@ -1,0 +1,24 @@
+<img width="400" [src]="imgData.src" [alt]="imgData.alt" />
+<button [disabled]="btnDisabled" (click)="onNewImage()">New image</button>
+<div (click)="onChangeSquare()" [class]="squareClass"></div>
+<button
+  [style.background]="buttonColor"
+  [style.color]="'white'"
+  (click)="onChangeButtonColor()"
+  [attr.aria-label]="buttonLabel"
+>
+  Click me
+</button>
+
+<app-user-card
+  [user]="users[0]"
+  (followUser)="onFollowUser($event)"
+></app-user-card>
+<app-user-card
+  [user]="users[1]"
+  cardColor="beige"
+  (followUser)="onFollowUser($event)"
+></app-user-card>
+
+<app-sizer [(size)]="fontSize"></app-sizer>
+<h3 [style.font-size.px]="fontSize">AppComponent font size {{ fontSize }}px</h3>

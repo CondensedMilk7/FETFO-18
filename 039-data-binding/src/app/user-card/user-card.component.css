@@ -1,0 +1,27 @@
+.card {
+  max-width: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card h3 {
+  padding: 12px;
+}
+
+.card button {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 6px;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,17 @@
+div {
+  transition: background 500ms ease;
+}
+
+.square-red,
+.square-blue {
+  width: 100px;
+  height: 100px;
+}
+
+.square-red {
+  background: red;
+}
+
+.square-blue {
+  background: blue;
+}
